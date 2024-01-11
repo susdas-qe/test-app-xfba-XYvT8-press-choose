@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: maven-hello-world-ktuu
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-rvbb-tenant/test-app-xfba/maven-hello-world-ktuu@sha256:e8f82fdfa4e9271016be9e8869310877c28208bfa4444b33eff3a13a6275ff79
+        name: my-java-quarkus
+        resources: {}
+status: {}
