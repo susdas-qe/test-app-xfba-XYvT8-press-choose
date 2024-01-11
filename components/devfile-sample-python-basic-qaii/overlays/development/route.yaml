@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-python-basic-qaii
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-python-basic-qaii
+    app.kubernetes.io/part-of: test-app-xfba
+  name: devfile-sample-python-basv4mb
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: devfile-sample-python-basic-qaii
+    weight: null
+status: {}
