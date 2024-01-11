@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-no-dockerfile-wy7o
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-appstudio-qe/build-e2e-rvbb-tenant/test-app-xfba/nodejs-no-dockerfile-wy7o@sha256:16458faf17d7af194fec6b933ba7e4dd263780e77b78eab1799ecc7a62b9af60
         name: my-nodejs
         ports:
         - containerPort: 3001
