@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: maven-hello-world-ktuu
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/build-e2e-rvbb-tenant/test-app-xfba/maven-hello-world-ktuu@sha256:e8f82fdfa4e9271016be9e8869310877c28208bfa4444b33eff3a13a6275ff79
         name: my-java-quarkus
         ports:
         - containerPort: 8081
