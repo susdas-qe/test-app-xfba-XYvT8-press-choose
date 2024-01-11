@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-no-dockerfile-wy7o
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-rvbb-tenant/test-app-xfba/nodejs-no-dockerfile-wy7o@sha256:16458faf17d7af194fec6b933ba7e4dd263780e77b78eab1799ecc7a62b9af60
+        name: my-nodejs
+        resources: {}
+status: {}
